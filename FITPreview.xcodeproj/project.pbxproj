@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0314039CAE9AA744D994ED3E /* RouteGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763EA981E5D7F4DD190C22E /* RouteGeometry.swift */; };
+		05CE88775776319F475F569D /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBE7405909778F46350871 /* RouteModel.swift */; };
+		098035E061B45A53ACBFA849 /* FITRouteDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609CA73A1564F09E58BF2CD /* FITRouteDecoderTests.swift */; };
+		18EB6B412B09669FCCE29630 /* RealRecordingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17521A83D9C220D3ABAFB57D /* RealRecordingTests.swift */; };
+		1FC08A1522F21FF4EABBFAFF /* RouteMapGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D8042B44FA53706655664 /* RouteMapGeometryTests.swift */; };
+		271748B20418586A9A96E519 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C2000FB7B6AAFFA3D54430 /* SetupView.swift */; };
+		3CB12FEC9A033DA90811B57F /* FITSwiftSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FE2F78DD75B6322BB399016F /* FITSwiftSDK */; };
+		446C06A5B33B68BB22F56196 /* FITPreviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A8678E529E620E45F7E12 /* FITPreviewApp.swift */; };
+		49713D19959AFA15B68CF6C6 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBE7405909778F46350871 /* RouteModel.swift */; };
+		4B40CEF5FCFD709703E4843B /* RouteMapGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701720BFD7FBB13B83327E14 /* RouteMapGeometry.swift */; };
+		6A87A51A98A18B02DFB92A34 /* RouteGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAB9A47D2BB99F7B313198 /* RouteGeometryTests.swift */; };
+		81CD8F014B267320420D8701 /* SummaryFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609B3070956983428499C7B4 /* SummaryFormatter.swift */; };
+		8520916BCA1682AEF4622969 /* RouteMapGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701720BFD7FBB13B83327E14 /* RouteMapGeometry.swift */; };
+		88D003948121B0B3379D17C0 /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649CEF1E6D628792CCAC072 /* RouteMapView.swift */; };
+		8E236EEE09AF3488C131785F /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C05731BBA1BCDB6D91C0FB /* PreviewViewController.swift */; };
+		8EB8EC715C64F0E95C75C68F /* FITTimestampExpander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390613FEA08A7A202F13009C /* FITTimestampExpander.swift */; };
+		918BFA9B6C7E2FBD8B5A311D /* FITQuickLook.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB68C590631E448ACD8CF909 /* FITQuickLook.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3B0B25E9DFAA17092FA09E9 /* FITRouteDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC39B4C23A00917D53542C /* FITRouteDecoder.swift */; };
+		A76A812A8F68EA8E0908BEAC /* RoutePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C06586FA1848429EC1101E /* RoutePreviewView.swift */; };
+		AFD7FFAE042BB0BBB4C90039 /* FITTimestampExpanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23161B90A4CBB012B50E7A8 /* FITTimestampExpanderTests.swift */; };
+		B75CD24F832D4DAE0BCFFC6E /* FITSwiftSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 05C211D8245091E508F0ED9E /* FITSwiftSDK */; };
+		C0317FF97BD7EB106A001280 /* FITRouteDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC39B4C23A00917D53542C /* FITRouteDecoder.swift */; };
+		CF9A6F3F499530E7BE1B89F3 /* FITFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60BAC1AB7A86669658F819 /* FITFixture.swift */; };
+		D6959D90C469CE853AAF0CCC /* RouteGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763EA981E5D7F4DD190C22E /* RouteGeometry.swift */; };
+		DE28630510B197175E7CBE37 /* FITTimestampExpander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390613FEA08A7A202F13009C /* FITTimestampExpander.swift */; };
+		E2E5ACDE886D3B2DBCCE4278 /* SummaryFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609B3070956983428499C7B4 /* SummaryFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09BF10177E5ABAB24EB1DA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321865605050B6FC9584FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94CFF5BA02439605875A94C8;
+			remoteInfo = FITQuickLook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A12C4A8D90C15D3267C3B21D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				918BFA9B6C7E2FBD8B5A311D /* FITQuickLook.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17521A83D9C220D3ABAFB57D /* RealRecordingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealRecordingTests.swift; sourceTree = "<group>"; };
+		1CFBE7405909778F46350871 /* RouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		390613FEA08A7A202F13009C /* FITTimestampExpander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITTimestampExpander.swift; sourceTree = "<group>"; };
+		609B3070956983428499C7B4 /* SummaryFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryFormatter.swift; sourceTree = "<group>"; };
+		701720BFD7FBB13B83327E14 /* RouteMapGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapGeometry.swift; sourceTree = "<group>"; };
+		779D8042B44FA53706655664 /* RouteMapGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapGeometryTests.swift; sourceTree = "<group>"; };
+		8649CEF1E6D628792CCAC072 /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapView.swift; sourceTree = "<group>"; };
+		87C05731BBA1BCDB6D91C0FB /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		9609CA73A1564F09E58BF2CD /* FITRouteDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITRouteDecoderTests.swift; sourceTree = "<group>"; };
+		A4C06586FA1848429EC1101E /* RoutePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePreviewView.swift; sourceTree = "<group>"; };
+		A9AC3AF6F83256C70AAF4F04 /* FIT Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIT Preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD60BAC1AB7A86669658F819 /* FITFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITFixture.swift; sourceTree = "<group>"; };
+		C0C2000FB7B6AAFFA3D54430 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		C23161B90A4CBB012B50E7A8 /* FITTimestampExpanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITTimestampExpanderTests.swift; sourceTree = "<group>"; };
+		C3BC39B4C23A00917D53542C /* FITRouteDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITRouteDecoder.swift; sourceTree = "<group>"; };
+		C763EA981E5D7F4DD190C22E /* RouteGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGeometry.swift; sourceTree = "<group>"; };
+		CBFAB9A47D2BB99F7B313198 /* RouteGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGeometryTests.swift; sourceTree = "<group>"; };
+		DA4A8678E529E620E45F7E12 /* FITPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITPreviewApp.swift; sourceTree = "<group>"; };
+		E756AF04ED10DFCE89AC4590 /* FITPreviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FITPreviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB68C590631E448ACD8CF909 /* FITQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FITQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20C0AFF5E1262F6E4389DFB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB12FEC9A033DA90811B57F /* FITSwiftSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8BB3946F23EAF1A16DD836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75CD24F832D4DAE0BCFFC6E /* FITSwiftSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30BE278A99F266B7C655F013 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C3BC39B4C23A00917D53542C /* FITRouteDecoder.swift */,
+				390613FEA08A7A202F13009C /* FITTimestampExpander.swift */,
+				C763EA981E5D7F4DD190C22E /* RouteGeometry.swift */,
+				1CFBE7405909778F46350871 /* RouteModel.swift */,
+			);
+			name = Core;
+			path = Sources/Core;
+			sourceTree = "<group>";
+		};
+		5B4E6CB2B5349F8ED324A989 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD60BAC1AB7A86669658F819 /* FITFixture.swift */,
+				9609CA73A1564F09E58BF2CD /* FITRouteDecoderTests.swift */,
+				C23161B90A4CBB012B50E7A8 /* FITTimestampExpanderTests.swift */,
+				17521A83D9C220D3ABAFB57D /* RealRecordingTests.swift */,
+				CBFAB9A47D2BB99F7B313198 /* RouteGeometryTests.swift */,
+				779D8042B44FA53706655664 /* RouteMapGeometryTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8F77D1C9AF5D3FEE70302688 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				701720BFD7FBB13B83327E14 /* RouteMapGeometry.swift */,
+				8649CEF1E6D628792CCAC072 /* RouteMapView.swift */,
+				A4C06586FA1848429EC1101E /* RoutePreviewView.swift */,
+				609B3070956983428499C7B4 /* SummaryFormatter.swift */,
+			);
+			name = Preview;
+			path = Sources/Preview;
+			sourceTree = "<group>";
+		};
+		9257E0282773089FDBEFD5A2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A8678E529E620E45F7E12 /* FITPreviewApp.swift */,
+				C0C2000FB7B6AAFFA3D54430 /* SetupView.swift */,
+			);
+			name = App;
+			path = Sources/App;
+			sourceTree = "<group>";
+		};
+		C8ED860D89EE028EA9C65138 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				87C05731BBA1BCDB6D91C0FB /* PreviewViewController.swift */,
+			);
+			name = Extension;
+			path = Sources/Extension;
+			sourceTree = "<group>";
+		};
+		CC145149CACD4A2377F9474F = {
+			isa = PBXGroup;
+			children = (
+				9257E0282773089FDBEFD5A2 /* App */,
+				30BE278A99F266B7C655F013 /* Core */,
+				C8ED860D89EE028EA9C65138 /* Extension */,
+				8F77D1C9AF5D3FEE70302688 /* Preview */,
+				5B4E6CB2B5349F8ED324A989 /* Tests */,
+				F8690E41D7E4564A2ECBAE1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8690E41D7E4564A2ECBAE1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC3AF6F83256C70AAF4F04 /* FIT Preview.app */,
+				E756AF04ED10DFCE89AC4590 /* FITPreviewTests.xctest */,
+				FB68C590631E448ACD8CF909 /* FITQuickLook.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A869FECD9EDA28DB651EA44 /* FITPreviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C06D8B3D65F0E894E68768 /* Build configuration list for PBXNativeTarget "FITPreviewTests" */;
+			buildPhases = (
+				9EBB84600526877A6E50A55C /* Sources */,
+				8F8BB3946F23EAF1A16DD836 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FITPreviewTests;
+			packageProductDependencies = (
+				05C211D8245091E508F0ED9E /* FITSwiftSDK */,
+			);
+			productName = FITPreviewTests;
+			productReference = E756AF04ED10DFCE89AC4590 /* FITPreviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8328ABE4900BAA46F5B1C070 /* FITPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D3A1CD56CAD7261AF41606 /* Build configuration list for PBXNativeTarget "FITPreview" */;
+			buildPhases = (
+				5334BB7EBAE2DE88E53679BE /* Sources */,
+				A12C4A8D90C15D3267C3B21D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AA971D6E207AB7D69B2D9DD /* PBXTargetDependency */,
+			);
+			name = FITPreview;
+			productName = FITPreview;
+			productReference = A9AC3AF6F83256C70AAF4F04 /* FIT Preview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94CFF5BA02439605875A94C8 /* FITQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E58D864539A9538C19A4F3 /* Build configuration list for PBXNativeTarget "FITQuickLook" */;
+			buildPhases = (
+				CDCA3D683859D814DB237881 /* Sources */,
+				20C0AFF5E1262F6E4389DFB9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FITQuickLook;
+			packageProductDependencies = (
+				FE2F78DD75B6322BB399016F /* FITSwiftSDK */,
+			);
+			productName = FITQuickLook;
+			productReference = FB68C590631E448ACD8CF909 /* FITQuickLook.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		321865605050B6FC9584FC4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					1A869FECD9EDA28DB651EA44 = {
+						ProvisioningStyle = Manual;
+					};
+					8328ABE4900BAA46F5B1C070 = {
+						ProvisioningStyle = Manual;
+					};
+					94CFF5BA02439605875A94C8 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F6C715C098163726A1974423 /* Build configuration list for PBXProject "FITPreview" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CC145149CACD4A2377F9474F;
+			packageReferences = (
+				74B0EFF659DBB67DF22C3D29 /* XCRemoteSwiftPackageReference "fit-swift-sdk" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8328ABE4900BAA46F5B1C070 /* FITPreview */,
+				1A869FECD9EDA28DB651EA44 /* FITPreviewTests */,
+				94CFF5BA02439605875A94C8 /* FITQuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5334BB7EBAE2DE88E53679BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446C06A5B33B68BB22F56196 /* FITPreviewApp.swift in Sources */,
+				271748B20418586A9A96E519 /* SetupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EBB84600526877A6E50A55C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9A6F3F499530E7BE1B89F3 /* FITFixture.swift in Sources */,
+				A3B0B25E9DFAA17092FA09E9 /* FITRouteDecoder.swift in Sources */,
+				098035E061B45A53ACBFA849 /* FITRouteDecoderTests.swift in Sources */,
+				8EB8EC715C64F0E95C75C68F /* FITTimestampExpander.swift in Sources */,
+				AFD7FFAE042BB0BBB4C90039 /* FITTimestampExpanderTests.swift in Sources */,
+				18EB6B412B09669FCCE29630 /* RealRecordingTests.swift in Sources */,
+				0314039CAE9AA744D994ED3E /* RouteGeometry.swift in Sources */,
+				6A87A51A98A18B02DFB92A34 /* RouteGeometryTests.swift in Sources */,
+				8520916BCA1682AEF4622969 /* RouteMapGeometry.swift in Sources */,
+				1FC08A1522F21FF4EABBFAFF /* RouteMapGeometryTests.swift in Sources */,
+				05CE88775776319F475F569D /* RouteModel.swift in Sources */,
+				E2E5ACDE886D3B2DBCCE4278 /* SummaryFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCA3D683859D814DB237881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0317FF97BD7EB106A001280 /* FITRouteDecoder.swift in Sources */,
+				DE28630510B197175E7CBE37 /* FITTimestampExpander.swift in Sources */,
+				8E236EEE09AF3488C131785F /* PreviewViewController.swift in Sources */,
+				D6959D90C469CE853AAF0CCC /* RouteGeometry.swift in Sources */,
+				4B40CEF5FCFD709703E4843B /* RouteMapGeometry.swift in Sources */,
+				88D003948121B0B3379D17C0 /* RouteMapView.swift in Sources */,
+				49713D19959AFA15B68CF6C6 /* RouteModel.swift in Sources */,
+				A76A812A8F68EA8E0908BEAC /* RoutePreviewView.swift in Sources */,
+				81CD8F014B267320420D8701 /* SummaryFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AA971D6E207AB7D69B2D9DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94CFF5BA02439605875A94C8 /* FITQuickLook */;
+			targetProxy = 09BF10177E5ABAB24EB1DA8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37EE580D93412751A17A1A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Extension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/Extension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearfuturelaboratory.fitpreview.quicklook;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		560A9F19FFCC129FDD085418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6FE57D432FBFE694014054A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/Extension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/Extension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearfuturelaboratory.fitpreview.quicklook;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8C505054DC3053EE10718C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearfuturelaboratory.fitpreview.tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF1CC22333179F2D35E5D60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/App.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearfuturelaboratory.fitpreview;
+				PRODUCT_NAME = "FIT Preview";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D82502BE21A4131BB1D1BC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/App.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearfuturelaboratory.fitpreview;
+				PRODUCT_NAME = "FIT Preview";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E01368B5E46C983F5A8C22EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearfuturelaboratory.fitpreview.tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E0822E6BF4C8538101D1968A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12C06D8B3D65F0E894E68768 /* Build configuration list for PBXNativeTarget "FITPreviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01368B5E46C983F5A8C22EA /* Debug */,
+				8C505054DC3053EE10718C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		25D3A1CD56CAD7261AF41606 /* Build configuration list for PBXNativeTarget "FITPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1CC22333179F2D35E5D60F /* Debug */,
+				D82502BE21A4131BB1D1BC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6E58D864539A9538C19A4F3 /* Build configuration list for PBXNativeTarget "FITQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE57D432FBFE694014054A7 /* Debug */,
+				37EE580D93412751A17A1A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6C715C098163726A1974423 /* Build configuration list for PBXProject "FITPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0822E6BF4C8538101D1968A /* Debug */,
+				560A9F19FFCC129FDD085418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74B0EFF659DBB67DF22C3D29 /* XCRemoteSwiftPackageReference "fit-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/garmin/fit-swift-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 21.217.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05C211D8245091E508F0ED9E /* FITSwiftSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B0EFF659DBB67DF22C3D29 /* XCRemoteSwiftPackageReference "fit-swift-sdk" */;
+			productName = FITSwiftSDK;
+		};
+		FE2F78DD75B6322BB399016F /* FITSwiftSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B0EFF659DBB67DF22C3D29 /* XCRemoteSwiftPackageReference "fit-swift-sdk" */;
+			productName = FITSwiftSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 321865605050B6FC9584FC4E /* Project object */;
+}

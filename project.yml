@@ -1,0 +1,100 @@
+name: FITPreview
+options:
+  bundleIdPrefix: com.nearfuturelaboratory.fitpreview
+  deploymentTarget:
+    macOS: '15.0'
+  xcodeVersion: '27.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    MACOSX_DEPLOYMENT_TARGET: '15.0'
+    CODE_SIGN_IDENTITY: '-'
+    CODE_SIGN_STYLE: Manual
+    ENABLE_HARDENED_RUNTIME: YES
+    MARKETING_VERSION: '1.0'
+    CURRENT_PROJECT_VERSION: '1'
+packages:
+  GarminFIT:
+    url: https://github.com/garmin/fit-swift-sdk.git
+    exactVersion: 21.217.0
+targets:
+  FITPreview:
+    type: application
+    platform: macOS
+    productName: FIT Preview
+    sources: [Sources/App]
+    info:
+      path: Configuration/App-Info.plist
+      properties:
+        CFBundleDisplayName: FIT Preview
+        LSApplicationCategoryType: public.app-category.utilities
+        NSPrincipalClass: NSApplication
+        NSHumanReadableCopyright: Copyright © 2026 Near Future Laboratory
+        UTImportedTypeDeclarations:
+          - UTTypeIdentifier: com.garmin.fit
+            UTTypeDescription: FIT Activity
+            UTTypeConformsTo: [public.data]
+            UTTypeTagSpecification:
+              public.filename-extension: [fit, FIT]
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: FIT Activity
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes: [com.garmin.fit]
+    entitlements:
+      path: Configuration/App.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-only: true
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.nearfuturelaboratory.fitpreview
+      PRODUCT_NAME: FIT Preview
+    dependencies:
+      - target: FITQuickLook
+        embed: true
+  FITQuickLook:
+    type: app-extension
+    platform: macOS
+    sources: [Sources/Extension, Sources/Core, Sources/Preview]
+    info:
+      path: Configuration/Extension-Info.plist
+      properties:
+        CFBundleDisplayName: FIT Route Preview
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.quicklook.preview
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PreviewViewController
+          NSExtensionAttributes:
+            QLSupportedContentTypes: [com.garmin.fit]
+            QLIsDataBasedPreview: false
+            QLSupportsSearchableItems: false
+    entitlements:
+      path: Configuration/Extension.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.network.client: true
+        com.apple.security.files.user-selected.read-only: true
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.nearfuturelaboratory.fitpreview.quicklook
+      APPLICATION_EXTENSION_API_ONLY: YES
+      SKIP_INSTALL: YES
+    dependencies:
+      - package: GarminFIT
+        product: FITSwiftSDK
+  FITPreviewTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests, Sources/Core, Sources/Preview/RouteMapGeometry.swift, Sources/Preview/SummaryFormatter.swift]
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.nearfuturelaboratory.fitpreview.tests
+      GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - package: GarminFIT
+        product: FITSwiftSDK
+schemes:
+  FITPreview:
+    build:
+      targets:
+        FITPreview: all
+        FITPreviewTests: [test]
+    test:
+      targets: [FITPreviewTests]
