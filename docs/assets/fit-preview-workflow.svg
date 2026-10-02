@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="700" viewBox="0 0 1440 700" role="img" aria-labelledby="title description">
+  <title id="title">FIT Preview: select a recording, press space, see the route</title>
+  <desc id="description">Workflow illustration showing a FIT document, a space-bar key, and a geographic route overview with start and finish markers. Blue, coral, and green graphics on white and deep blue surfaces.</desc>
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#fff" stroke-opacity=".07"/></pattern>
+    <pattern id="mapGrid" width="62" height="62" patternUnits="userSpaceOnUse"><path d="M62 0H0V62" fill="none" stroke="#dbe6f5" stroke-width="2"/></pattern>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="m2 2 7 4-7 4" fill="none" stroke="#8db9ff" stroke-width="2"/></marker>
+  </defs>
+  <rect width="1440" height="700" rx="28" fill="#081b41"/>
+  <rect width="1440" height="700" rx="28" fill="url(#grid)"/>
+  <circle cx="1350" cy="50" r="225" fill="#1263ff" opacity=".19"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <rect x="56" y="48" width="246" height="32" rx="16" fill="#163d79"/>
+    <text x="76" y="69" fill="#b9d6ff" font-size="12" font-weight="700" letter-spacing="2">WORKFLOW ILLUSTRATION</text>
+    <text x="56" y="158" fill="#fff" font-size="76" font-weight="800" letter-spacing="-3">FIT Preview</text>
+    <text x="60" y="202" fill="#b9d6ff" font-size="25">Your recorded route, one space bar away.</text>
+    <g transform="translate(78 280)">
+      <path d="M0 18A18 18 0 0 1 18 0H108L152 44V178a18 18 0 0 1-18 18H18a18 18 0 0 1-18-18Z" fill="#fff"/>
+      <path d="M108 0v44h44" fill="#b9d6ff"/>
+      <path d="M26 72H98M26 92H119" stroke="#cad9ed" stroke-width="6" stroke-linecap="round"/>
+      <rect x="-10" y="117" width="112" height="48" rx="12" fill="#ff675c"/>
+      <text x="46" y="151" text-anchor="middle" fill="#081b41" font-size="32" font-weight="800">.FIT</text>
+    </g>
+    <path d="M251 374H293" stroke="#8db9ff" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(318 332)">
+      <rect x="0" y="8" width="216" height="100" rx="20" fill="#0040b2"/>
+      <rect width="216" height="96" rx="20" fill="#1263ff" stroke="#7aa9ff" stroke-width="2"/>
+      <path d="M55 48v12h106V48" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <text x="108" y="84" text-anchor="middle" fill="#e8f1ff" font-size="13" font-weight="700" letter-spacing="2">SPACE</text>
+    </g>
+    <path d="M555 374H601" stroke="#8db9ff" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(626 254)">
+      <rect width="750" height="344" rx="18" fill="#fff"/>
+      <rect x="1" y="48" width="748" height="246" fill="#edf5ff"/>
+      <rect x="1" y="48" width="748" height="246" fill="url(#mapGrid)"/>
+      <text x="24" y="31" fill="#081b41" font-size="16" font-weight="700">Route overview</text>
+      <rect x="635" y="13" width="94" height="24" rx="7" fill="#1263ff"/>
+      <text x="682" y="30" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Fit Route</text>
+      <path d="M510 48c-30 35-20 55-49 74s-5 48-25 66-28 19-28 52-25 54-25 54H749V48Z" fill="#9fcfff"/>
+      <path d="M70 57 128 141 220 162 309 112 414 122M15 241 137 224 265 252 372 195 472 212M183 48 199 106 174 189 201 294M332 48 361 140 341 223 369 294" fill="none" stroke="#fff" stroke-width="16"/>
+      <path d="M70 57 128 141 220 162 309 112 414 122M15 241 137 224 265 252 372 195 472 212M183 48 199 106 174 189 201 294M332 48 361 140 341 223 369 294" fill="none" stroke="#b7cbe5" stroke-width="2"/>
+      <path d="M112 219 143 175 218 163 267 137 310 112 361 140 343 221 271 250 196 234 171 208" fill="none" stroke="#fff" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M112 219 143 175 218 163 267 137 310 112 361 140 343 221 271 250 196 234 171 208" fill="none" stroke="#1263ff" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="112" cy="219" r="14" fill="#00b87b" stroke="#fff" stroke-width="4"/>
+      <circle cx="171" cy="208" r="14" fill="#ff675c" stroke="#fff" stroke-width="4"/>
+      <text x="84" y="258" fill="#073c32" font-size="12" font-weight="700">START</text>
+      <text x="154" y="186" fill="#853127" font-size="12" font-weight="700">FINISH</text>
+      <text x="82" y="102" fill="#4f6a8d" font-size="11" letter-spacing="1">STREETS</text>
+      <text x="245" y="81" fill="#4f6a8d" font-size="11" letter-spacing="1">GEOGRAPHIC CONTEXT</text>
+      <text x="556" y="179" fill="#245588" font-size="15" letter-spacing="2">COAST</text>
+      <text x="24" y="321" fill="#365173" font-size="13">Recorded date</text>
+      <text x="201" y="321" fill="#365173" font-size="13">Distance</text>
+      <text x="337" y="321" fill="#365173" font-size="13">Activity time</text>
+      <circle cx="184" cy="316" r="2" fill="#93a8c3"/>
+      <circle cx="319" cy="316" r="2" fill="#93a8c3"/>
+    </g>
+    <text x="78" y="531" fill="#fff" font-size="17" font-weight="700">01  Select a FIT file</text>
+    <text x="322" y="531" fill="#fff" font-size="17" font-weight="700">02  Press space</text>
+    <text x="632" y="644" fill="#fff" font-size="17" font-weight="700">03  Explore the route in Quick Look</text>
+    <text x="60" y="653" fill="#7ea9e3" font-size="14">macOS 15+ · Native AppKit + MapKit · Local FIT decoding</text>
+  </g>
+</svg>
