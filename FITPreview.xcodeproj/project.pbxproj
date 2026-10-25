@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0314039CAE9AA744D994ED3E /* RouteGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763EA981E5D7F4DD190C22E /* RouteGeometry.swift */; };
+		040EA575791C34A5CEFF9CAD /* GPXRouteDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D24919AE51F80251D9CA8 /* GPXRouteDecoder.swift */; };
 		05CE88775776319F475F569D /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBE7405909778F46350871 /* RouteModel.swift */; };
 		098035E061B45A53ACBFA849 /* FITRouteDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609CA73A1564F09E58BF2CD /* FITRouteDecoderTests.swift */; };
+		13DA7FA4E7A6ED7AF5A466D1 /* RouteFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B70EE686B930CBCBA212950 /* RouteFileDecoder.swift */; };
 		18EB6B412B09669FCCE29630 /* RealRecordingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17521A83D9C220D3ABAFB57D /* RealRecordingTests.swift */; };
+		1DC0F1B39CDF0E2D65007C71 /* GPXRouteDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE1151DE1A84A6BA42E00A /* GPXRouteDecoderTests.swift */; };
 		1FC08A1522F21FF4EABBFAFF /* RouteMapGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779D8042B44FA53706655664 /* RouteMapGeometryTests.swift */; };
 		271748B20418586A9A96E519 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C2000FB7B6AAFFA3D54430 /* SetupView.swift */; };
 		3CB12FEC9A033DA90811B57F /* FITSwiftSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FE2F78DD75B6322BB399016F /* FITSwiftSDK */; };
 		446C06A5B33B68BB22F56196 /* FITPreviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A8678E529E620E45F7E12 /* FITPreviewApp.swift */; };
 		49713D19959AFA15B68CF6C6 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBE7405909778F46350871 /* RouteModel.swift */; };
 		4B40CEF5FCFD709703E4843B /* RouteMapGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701720BFD7FBB13B83327E14 /* RouteMapGeometry.swift */; };
+		637D5648E88E6CD12CB840A2 /* GPXSegmentAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D93F31C6CC995FBD0AEF23 /* GPXSegmentAccumulator.swift */; };
 		6A87A51A98A18B02DFB92A34 /* RouteGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAB9A47D2BB99F7B313198 /* RouteGeometryTests.swift */; };
 		81CD8F014B267320420D8701 /* SummaryFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609B3070956983428499C7B4 /* SummaryFormatter.swift */; };
 		8520916BCA1682AEF4622969 /* RouteMapGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701720BFD7FBB13B83327E14 /* RouteMapGeometry.swift */; };
@@ -28,11 +32,14 @@
 		A76A812A8F68EA8E0908BEAC /* RoutePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C06586FA1848429EC1101E /* RoutePreviewView.swift */; };
 		AFD7FFAE042BB0BBB4C90039 /* FITTimestampExpanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23161B90A4CBB012B50E7A8 /* FITTimestampExpanderTests.swift */; };
 		B75CD24F832D4DAE0BCFFC6E /* FITSwiftSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 05C211D8245091E508F0ED9E /* FITSwiftSDK */; };
+		BC089AF3D3E1578D4C126B7B /* GPXSegmentAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D93F31C6CC995FBD0AEF23 /* GPXSegmentAccumulator.swift */; };
 		C0317FF97BD7EB106A001280 /* FITRouteDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC39B4C23A00917D53542C /* FITRouteDecoder.swift */; };
 		CF9A6F3F499530E7BE1B89F3 /* FITFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60BAC1AB7A86669658F819 /* FITFixture.swift */; };
 		D6959D90C469CE853AAF0CCC /* RouteGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C763EA981E5D7F4DD190C22E /* RouteGeometry.swift */; };
 		DE28630510B197175E7CBE37 /* FITTimestampExpander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390613FEA08A7A202F13009C /* FITTimestampExpander.swift */; };
+		E08F1AD5F78336F4B5CE4679 /* RouteFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B70EE686B930CBCBA212950 /* RouteFileDecoder.swift */; };
 		E2E5ACDE886D3B2DBCCE4278 /* SummaryFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609B3070956983428499C7B4 /* SummaryFormatter.swift */; };
+		F5013D1AA439C9435CFA21F5 /* GPXRouteDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D24919AE51F80251D9CA8 /* GPXRouteDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +67,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05BE1151DE1A84A6BA42E00A /* GPXRouteDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRouteDecoderTests.swift; sourceTree = "<group>"; };
 		17521A83D9C220D3ABAFB57D /* RealRecordingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealRecordingTests.swift; sourceTree = "<group>"; };
 		1CFBE7405909778F46350871 /* RouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		23D93F31C6CC995FBD0AEF23 /* GPXSegmentAccumulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXSegmentAccumulator.swift; sourceTree = "<group>"; };
 		390613FEA08A7A202F13009C /* FITTimestampExpander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITTimestampExpander.swift; sourceTree = "<group>"; };
+		5B70EE686B930CBCBA212950 /* RouteFileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteFileDecoder.swift; sourceTree = "<group>"; };
 		609B3070956983428499C7B4 /* SummaryFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryFormatter.swift; sourceTree = "<group>"; };
 		701720BFD7FBB13B83327E14 /* RouteMapGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapGeometry.swift; sourceTree = "<group>"; };
 		779D8042B44FA53706655664 /* RouteMapGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapGeometryTests.swift; sourceTree = "<group>"; };
@@ -79,6 +89,7 @@
 		CBFAB9A47D2BB99F7B313198 /* RouteGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGeometryTests.swift; sourceTree = "<group>"; };
 		DA4A8678E529E620E45F7E12 /* FITPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FITPreviewApp.swift; sourceTree = "<group>"; };
 		E756AF04ED10DFCE89AC4590 /* FITPreviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FITPreviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94D24919AE51F80251D9CA8 /* GPXRouteDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRouteDecoder.swift; sourceTree = "<group>"; };
 		FB68C590631E448ACD8CF909 /* FITQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FITQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +118,9 @@
 			children = (
 				C3BC39B4C23A00917D53542C /* FITRouteDecoder.swift */,
 				390613FEA08A7A202F13009C /* FITTimestampExpander.swift */,
+				F94D24919AE51F80251D9CA8 /* GPXRouteDecoder.swift */,
+				23D93F31C6CC995FBD0AEF23 /* GPXSegmentAccumulator.swift */,
+				5B70EE686B930CBCBA212950 /* RouteFileDecoder.swift */,
 				C763EA981E5D7F4DD190C22E /* RouteGeometry.swift */,
 				1CFBE7405909778F46350871 /* RouteModel.swift */,
 			);
@@ -120,6 +134,7 @@
 				AD60BAC1AB7A86669658F819 /* FITFixture.swift */,
 				9609CA73A1564F09E58BF2CD /* FITRouteDecoderTests.swift */,
 				C23161B90A4CBB012B50E7A8 /* FITTimestampExpanderTests.swift */,
+				05BE1151DE1A84A6BA42E00A /* GPXRouteDecoderTests.swift */,
 				17521A83D9C220D3ABAFB57D /* RealRecordingTests.swift */,
 				CBFAB9A47D2BB99F7B313198 /* RouteGeometryTests.swift */,
 				779D8042B44FA53706655664 /* RouteMapGeometryTests.swift */,
@@ -299,7 +314,11 @@
 				098035E061B45A53ACBFA849 /* FITRouteDecoderTests.swift in Sources */,
 				8EB8EC715C64F0E95C75C68F /* FITTimestampExpander.swift in Sources */,
 				AFD7FFAE042BB0BBB4C90039 /* FITTimestampExpanderTests.swift in Sources */,
+				040EA575791C34A5CEFF9CAD /* GPXRouteDecoder.swift in Sources */,
+				1DC0F1B39CDF0E2D65007C71 /* GPXRouteDecoderTests.swift in Sources */,
+				BC089AF3D3E1578D4C126B7B /* GPXSegmentAccumulator.swift in Sources */,
 				18EB6B412B09669FCCE29630 /* RealRecordingTests.swift in Sources */,
+				13DA7FA4E7A6ED7AF5A466D1 /* RouteFileDecoder.swift in Sources */,
 				0314039CAE9AA744D994ED3E /* RouteGeometry.swift in Sources */,
 				6A87A51A98A18B02DFB92A34 /* RouteGeometryTests.swift in Sources */,
 				8520916BCA1682AEF4622969 /* RouteMapGeometry.swift in Sources */,
@@ -315,7 +334,10 @@
 			files = (
 				C0317FF97BD7EB106A001280 /* FITRouteDecoder.swift in Sources */,
 				DE28630510B197175E7CBE37 /* FITTimestampExpander.swift in Sources */,
+				F5013D1AA439C9435CFA21F5 /* GPXRouteDecoder.swift in Sources */,
+				637D5648E88E6CD12CB840A2 /* GPXSegmentAccumulator.swift in Sources */,
 				8E236EEE09AF3488C131785F /* PreviewViewController.swift in Sources */,
+				E08F1AD5F78336F4B5CE4679 /* RouteFileDecoder.swift in Sources */,
 				D6959D90C469CE853AAF0CCC /* RouteGeometry.swift in Sources */,
 				4B40CEF5FCFD709703E4843B /* RouteMapGeometry.swift in Sources */,
 				88D003948121B0B3379D17C0 /* RouteMapView.swift in Sources */,

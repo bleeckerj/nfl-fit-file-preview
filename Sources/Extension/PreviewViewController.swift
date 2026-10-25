@@ -17,7 +17,7 @@ final class PreviewViewController: NSViewController, @preconcurrency QLPreviewin
         generation += 1
         let requestGeneration = generation
         preview.loading(filename: url.lastPathComponent)
-        let task = Task.detached(priority: .userInitiated) { try FITRouteDecoder.decode(url: url) }
+        let task = Task.detached(priority: .userInitiated) { try RouteFileDecoder.decode(url: url) }
         decodeTask = task
         Task { [weak self] in
             do {

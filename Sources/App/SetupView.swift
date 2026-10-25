@@ -14,11 +14,11 @@ struct SetupView: View {
                         .foregroundStyle(.secondary)
                 }
             }
-            Text("Select a .fit file in Finder and press the space bar. The preview shows the route on a map, with recorded distance and activity time when available.")
+            Text("Select a .fit or .gpx file in Finder and press the space bar. The preview shows the route on a map, with distance and time when available. GPX distance is approximate; GPX time is elapsed time within each segment.")
                 .fixedSize(horizontal: false, vertical: true)
             Text("If Finder shows only a file icon, enable FIT Route Preview under System Settings → General → Login Items & Extensions → Quick Look. Keep this app in your Applications folder.")
                 .fixedSize(horizontal: false, vertical: true)
-            Text("FIT files are decoded on your Mac. Apple Maps uses a network connection for geographic imagery. GPS gaps remain separate on the map.")
+            Text("FIT and GPX files are decoded on your Mac. Apple Maps uses a network connection for geographic imagery. GPS gaps remain separate on the map.")
                 .font(.callout)
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)

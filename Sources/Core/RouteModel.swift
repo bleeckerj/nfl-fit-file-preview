@@ -19,6 +19,7 @@ struct RouteSummary: Sendable {
     let distanceMeters: Double?
     let durationSeconds: Double?
     let durationIsElapsed: Bool
+    var distanceIsEstimated = false
 
     var start: RouteCoordinate? { segments.first?.first }
     var end: RouteCoordinate? { segments.last?.last }

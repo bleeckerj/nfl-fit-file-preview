@@ -36,11 +36,21 @@ targets:
             UTTypeConformsTo: [public.data]
             UTTypeTagSpecification:
               public.filename-extension: [fit, FIT]
+          - UTTypeIdentifier: com.topografix.gpx
+            UTTypeDescription: GPS Exchange Format
+            UTTypeConformsTo: [public.xml]
+            UTTypeTagSpecification:
+              public.filename-extension: [gpx, GPX]
+              public.mime-type: application/gpx+xml
         CFBundleDocumentTypes:
           - CFBundleTypeName: FIT Activity
             CFBundleTypeRole: Viewer
             LSHandlerRank: Alternate
             LSItemContentTypes: [com.garmin.fit]
+          - CFBundleTypeName: GPS Exchange Format
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes: [com.topografix.gpx]
     entitlements:
       path: Configuration/App.entitlements
       properties:
@@ -64,7 +74,7 @@ targets:
           NSExtensionPointIdentifier: com.apple.quicklook.preview
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PreviewViewController
           NSExtensionAttributes:
-            QLSupportedContentTypes: [com.garmin.fit]
+            QLSupportedContentTypes: [com.garmin.fit, com.topografix.gpx]
             QLIsDataBasedPreview: false
             QLSupportsSearchableItems: false
     entitlements:

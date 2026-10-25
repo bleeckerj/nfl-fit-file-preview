@@ -34,4 +34,4 @@ rmdir "$staging"
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f "$target_app"
 pluginkit -a "$target_app/Contents/PlugIns/FITQuickLook.appex"
 pluginkit -e use -i com.nearfuturelaboratory.fitpreview.quicklook
-printf '[%s] Installed %s\nSelect a FIT file in Finder and press the space bar.\n' "$(date '+%H:%M:%S')" "$target_app"
+printf '[%s] Installed %s\nSelect a FIT or GPX file in Finder and press the space bar.\n' "$(date '+%H:%M:%S')" "$target_app"

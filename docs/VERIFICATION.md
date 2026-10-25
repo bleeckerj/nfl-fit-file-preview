@@ -11,6 +11,16 @@ Verified October 1, 2026, on macOS 27.0.1 with Xcode 27 and Apple Swift 6.4.
 - A `qlmanage -p` request launched the installed FITQuickLook extension process; runtime logs showed its remote view hosted.
 - Property lists, entitlements, shell syntax, documentation prose checks, and staged whitespace checks passed.
 
+## GPX support verification — October 25, 2026
+
+- The host app, extension, and test bundle built successfully with GPX support.
+- All 38 tests passed, including 15 GPX tests and the existing real FIT integration sample with 6,491 GPS points.
+- GPX tests cover tracks and routes, GPX 1.0 and 1.1 namespaces, uppercase file dispatch, track preference, segment boundaries, missing or invalid coordinates and timestamps, date-line distance, approximate distance formatting, elapsed duration, empty and waypoint-only files, malformed XML, external entity isolation, cancellation, the 100 MB limit, and 25,000 points.
+- The updated app was installed at `/Users/julian/Applications/FIT Preview.app`; the previous build was backed up by the installer.
+- Strict signature verification passed for the installed app and embedded extension. PlugInKit lists the updated extension as enabled.
+- Live Launch Services resolves `fit` and `FIT` to `com.garmin.fit`, and `gpx` and `GPX` to `com.topografix.gpx`.
+- The GPX Finder space-bar preview and visible map interactions have not been checked. The visual acceptance items below remain open for both formats.
+
 ## Remaining visual acceptance
 
 The desktop was initially locked. After it became available, concurrent Finder activity prevented completing a controlled Finder space-bar check. The separate CLI preview window also timed out in the accessibility tool. No rendered map screenshot was accepted as verification.

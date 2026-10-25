@@ -29,6 +29,7 @@
 			<key>QLSupportedContentTypes</key>
 			<array>
 				<string>com.garmin.fit</string>
+				<string>com.topografix.gpx</string>
 			</array>
 			<key>QLSupportsSearchableItems</key>
 			<false/>

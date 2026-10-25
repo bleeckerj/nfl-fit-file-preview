@@ -15,7 +15,8 @@ enum SummaryFormatter {
             formatter.unitOptions = .providedUnit
             formatter.numberFormatter.maximumFractionDigits = 1
             let unit: UnitLength = Locale.current.measurementSystem == .us ? .miles : .kilometers
-            items.append(formatter.string(from: Measurement(value: distance, unit: UnitLength.meters).converted(to: unit)))
+            let text = formatter.string(from: Measurement(value: distance, unit: UnitLength.meters).converted(to: unit))
+            items.append(summary.distanceIsEstimated ? "Approx. \(text)" : text)
         }
         if let duration = summary.durationSeconds {
             let formatter = DateComponentsFormatter()

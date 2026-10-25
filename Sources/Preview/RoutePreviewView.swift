@@ -1,7 +1,7 @@
 import AppKit
 
 final class RoutePreviewView: NSView {
-    private let titleLabel = NSTextField(labelWithString: "FIT Route")
+    private let titleLabel = NSTextField(labelWithString: "Route")
     private let detailsLabel = NSTextField(wrappingLabelWithString: "")
     private let messageLabel = NSTextField(wrappingLabelWithString: "")
     private let fitButton = NSButton(title: "Fit Route", target: nil, action: nil)
@@ -52,7 +52,7 @@ final class RoutePreviewView: NSView {
             messageLabel.centerYAnchor.constraint(equalTo: content.centerYAnchor),
             messageLabel.widthAnchor.constraint(lessThanOrEqualTo: content.widthAnchor, multiplier: 0.8)
         ])
-        showMessage("Select a FIT file to preview its route.")
+        showMessage("Select a FIT or GPX file to preview its route.")
     }
 
     required init?(coder: NSCoder) { fatalError("init(coder:) is not supported") }
