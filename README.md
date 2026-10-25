@@ -2,12 +2,12 @@
 
 **Select a FIT or GPX file in Finder. Press the space bar. Explore the route on a geographic map.**
 
-![FIT Preview workflow illustration: select a FIT recording, press space, and explore a geographic route overview with start and finish markers.](docs/assets/fit-preview-workflow.svg)
+![FIT workflow illustration: select a FIT recording, press space, and explore a geographic route overview with start and finish markers. GPX files use the same workflow.](docs/assets/fit-preview-workflow.svg)
 
 <p align="center">
   <img alt="Platform: macOS 15 or later" src="https://img.shields.io/badge/macOS-15%2B-1263ff?style=flat-square" />
   <img alt="Native AppKit and MapKit interface" src="https://img.shields.io/badge/native-AppKit%20%2B%20MapKit-081b41?style=flat-square" />
-  <img alt="FIT files decoded locally" src="https://img.shields.io/badge/FIT-decoded%20locally-00895c?style=flat-square" />
+  <img alt="FIT and GPX decoded locally" src="https://img.shields.io/badge/FIT%20%2B%20GPX-decoded%20locally-00895c?style=flat-square" />
   <img alt="Release status: development build" src="https://img.shields.io/badge/status-development%20build-ff675c?style=flat-square" />
 </p>
 
@@ -29,7 +29,15 @@ The illustrations explain the workflow and data flow. They are diagrams; visual 
 
 ## Get started
 
-**This repository currently provides source and a locally signed development build. A downloadable, Developer ID-signed and notarized release has not been published.**
+[**Download FIT Preview for macOS**](https://github.com/bleeckerj/nfl-fit-file-preview/releases/download/v1.0.0-preview.2/FIT-Preview-1.0.0-preview.2-universal.dmg)
+
+The development prerelease supports FIT and GPX files on macOS 15 or later, with Apple silicon and Intel executables. It is Developer ID-signed and **not notarized**. Independent installation on another Mac and runtime behavior on Intel and macOS 15 remain unverified. See the [release notes and checksums](https://github.com/bleeckerj/nfl-fit-file-preview/releases/tag/v1.0.0-preview.2).
+
+1. Open the DMG and drag **FIT Preview.app** into **Applications**.
+2. Open the app once and keep it installed; it contains the Quick Look extension.
+3. Select a `.fit` or `.gpx` file in Finder and press **space**.
+
+macOS may block the first launch of this unnotarized preview. Follow [Apple's instructions for downloaded apps](https://support.apple.com/guide/mac-help/mh40616/mac).
 
 ### Build requirements
 
@@ -48,7 +56,7 @@ You can also open [FITPreview.xcodeproj](FITPreview.xcodeproj) in Xcode and buil
 
 ### Preview a recording
 
-1. Keep **FIT Preview.app** in `~/Applications`; it contains the extension Finder uses.
+1. Keep **FIT Preview.app** in `/Applications` or `~/Applications`; it contains the extension Finder uses.
 2. Select a `.fit`, `.FIT`, `.gpx`, or `.GPX` file in Finder.
 3. Press **space** to open Quick Look.
 4. Explore the map, then press **space** again to close the preview.
@@ -142,11 +150,11 @@ Spotlight metadata may retain a dynamic type from before installation; Launch Se
 
 ## Release preparation
 
-The current app and extension are sandboxed and signed with a local ad hoc signature. A shareable download still needs:
+The local Debug build uses an ad hoc signature. The downloadable universal prerelease uses Developer ID signing. Both app and extension are sandboxed. The [distribution guide](docs/DISTRIBUTION.md) describes immutable source snapshots, packaging, signatures, and checksums.
 
-- A Release build signed with a **Developer ID Application** certificate for the app and embedded extension.
+A notarized release still needs:
+
 - Hardened runtime, notarization, and a stapled approval ticket.
-- A DMG or ZIP containing the installed app and installation guidance.
 - Clean-install and Finder checks on another Mac, including supported macOS versions and any advertised CPU architectures.
 
 The app supports FIT and GPX route previews. Elevation charts, playback, and Finder thumbnails are outside the current implementation.

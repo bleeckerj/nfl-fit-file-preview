@@ -3,7 +3,7 @@
 The DMG packager builds an immutable Git commit, signs the app and disk image with the Developer ID configured in `Configuration/Distribution.xcconfig`, and verifies both Apple silicon and Intel executables. Signing credentials stay in the macOS keychain.
 
 ```sh
-bash scripts/package-dmg.sh 1.0.0-preview.1 SOURCE_COMMIT
+bash scripts/package-dmg.sh 1.0.0-preview.2 SOURCE_COMMIT
 ```
 
 Use the full SHA of a commit already published on GitHub for a public release. The source snapshot lives under ignored `.build/DistributionSources`; the signed Release build uses `.build/DistributionDerivedData`. Concurrent edits to the working tree are excluded from the app being packaged.
@@ -11,6 +11,8 @@ Use the full SHA of a commit already published on GitHub for a public release. T
 The durable output folder is `releases/VERSION/`. It contains the DMG, installation instructions, `SourceRevision.txt`, and `SHA256SUMS.txt`. Existing DMGs are never overwritten. Keep the checksum file with the exact final DMG; regenerate it after any notarization stapling step.
 
 Before publishing, run the source snapshot's test script, inspect the mounted disk image, and verify its app and extension signatures and architecture slices. Treat successful packaging separately from a clean installation on another Mac and visible Finder interaction checks.
+
+The `v1.0.0-preview.1` download was built from the original FIT-only source. The `v1.0.0-preview.2` prerelease adds GPX tracks and routes. Use each release's `SourceRevision.txt` to identify its exact source commit; rebuilding the development app does not replace an existing download.
 
 ## Notarization
 

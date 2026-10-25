@@ -21,6 +21,13 @@ Verified October 1, 2026, on macOS 27.0.1 with Xcode 27 and Apple Swift 6.4.
 - Live Launch Services resolves `fit` and `FIT` to `com.garmin.fit`, and `gpx` and `GPX` to `com.topografix.gpx`.
 - The GPX Finder space-bar preview and visible map interactions have not been checked. The visual acceptance items below remain open for both formats.
 
+## Rebuild verification — October 25, 2026
+
+- `bash scripts/build.sh` completed successfully after the GPX and distribution changes.
+- `bash scripts/test.sh` passed all 38 tests, including the real FIT integration sample and 15 GPX tests.
+- The published `v1.0.0-preview.1` DMG uses the earlier FIT-only source revision `8217a7cc49f09671ac4514cf188a96f52209773f`. The next GPX-enabled package is `v1.0.0-preview.2`; its exact source revision and checksum accompany the download.
+- Visible Finder preview behavior remains on the acceptance checklist below.
+
 ## Remaining visual acceptance
 
 The desktop was initially locked. After it became available, concurrent Finder activity prevented completing a controlled Finder space-bar check. The separate CLI preview window also timed out in the accessibility tool. No rendered map screenshot was accepted as verification.

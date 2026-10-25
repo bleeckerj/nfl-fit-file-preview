@@ -5,12 +5,12 @@ Requires macOS 15 or later. Includes Apple silicon and Intel builds.
 1. Open the DMG and drag FIT Preview.app into Applications.
 2. Open FIT Preview.app once and leave it installed; it contains the Quick Look extension.
 3. If needed, enable FIT Route Preview in System Settings > General > Login Items & Extensions > Quick Look.
-4. Select a .fit file in Finder and press the spacebar. Press it again to close the preview.
+4. Select a .fit or .gpx file in Finder and press the spacebar. Press it again to close the preview.
 
 This app is signed with Julian Bleecker's Developer ID. The GitHub release page states its notarization status. Download it only from the project's GitHub release page. Apple's information about opening downloaded apps is at:
 https://support.apple.com/guide/mac-help/mh40616/mac
 
-The FIT file is decoded locally. Apple Maps requests map imagery over the network. Files without GPS positions cannot display a route.
+FIT and GPX files are decoded locally. GPX distance is approximate, and timestamp-based duration is labeled Elapsed. Apple Maps requests map imagery over the network. Files without GPS positions cannot display a route.
 
 Source and build instructions:
 https://github.com/bleeckerj/nfl-fit-file-preview
