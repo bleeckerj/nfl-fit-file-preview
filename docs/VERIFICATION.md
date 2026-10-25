@@ -25,7 +25,11 @@ Verified October 1, 2026, on macOS 27.0.1 with Xcode 27 and Apple Swift 6.4.
 
 - `bash scripts/build.sh` completed successfully after the GPX and distribution changes.
 - `bash scripts/test.sh` passed all 38 tests, including the real FIT integration sample and 15 GPX tests.
-- The published `v1.0.0-preview.1` DMG uses the earlier FIT-only source revision `8217a7cc49f09671ac4514cf188a96f52209773f`. The next GPX-enabled package is `v1.0.0-preview.2`; its exact source revision and checksum accompany the download.
+- The published `v1.0.0-preview.1` DMG uses the earlier FIT-only source revision `8217a7cc49f09671ac4514cf188a96f52209773f`. The GPX-enabled universal package is `v1.0.0-preview.2`, built from `e15e726be2be0273481e52719af31b5788b2b5f6`; its exact source revision and checksum accompany the download.
+- The immutable release source snapshot passed all 38 tests, including the local FIT integration sample.
+- The universal Release app and extension passed Developer ID signature verification, contain `arm64` and `x86_64` executables, and use the hardened runtime. The signed DMG passed disk-image verification and a read-only mounted inspection; its embedded extension declares FIT and GPX support.
+- DMG SHA-256: `ec6705e8770ab9c06f6c95af5d0f047e175adf1194269881747ec18ea8382670`.
+- The rebuilt local Debug app was installed with the previous installation backed up. The downloadable prerelease is not notarized.
 - Visible Finder preview behavior remains on the acceptance checklist below.
 
 ## Remaining visual acceptance
